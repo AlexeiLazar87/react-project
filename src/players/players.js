@@ -1,8 +1,9 @@
 function Players(props) {
-    let {name, age, country, position, image} = props;
     return (
         <div>
-            <div>{image} {name} {age}</div>
+            <img src={props.image} alt=""/>
+            <h2>name: {props.name}</h2>
+            <h2>age: {props.age}</h2>
         </div>
     )
 }
