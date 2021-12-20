@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+}
+
+.first {
+    width: 50%;
+    background-color: aqua;
+    color: darkblue;
+}
+
+.second {
+    width: 50%;
+    background-color: cyan;
+    color: mediumblue;
+}
