@@ -1,4 +1,4 @@
-export default function User ({item, info}) {
+export default function User({item, info}) {
     return (
         <div>
             <h2>{item.id}_name: {item.name} - lastname: {item.username}</h2>

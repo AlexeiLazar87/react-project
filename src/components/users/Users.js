@@ -31,23 +31,7 @@ export default function Users() {
                 {
                     singleUser ?
                         (<h2>
-                            id: {singleUser.id}
-                            <br/>
-                            name: {singleUser.name}
-                            <br/>
-                            lastname: {singleUser.username}
-                            <br/>
-                            email: {singleUser.email}
-                            <br/>
-                            phone: {singleUser.phone}
-                            <br/>
-                            website: {singleUser.website}
-                            <br/>
-                            city: {singleUser.address.city}
-                            <br/>
-                            street: {singleUser.address.street}
-                            <br/>
-                            company: {singleUser.company.name}
+                            {JSON.stringify(singleUser)}
                         </h2>) :
                         (<h2>not defined</h2>)
                 }
