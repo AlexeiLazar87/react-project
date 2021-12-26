@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+}
+
+.a {
+    width: 50%;
+    background-color: black;
+    color: yellow;
+}
+
+.b {
+    width: 50%;
+    background-color: yellow;
+    color: black;
+}
