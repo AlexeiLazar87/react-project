@@ -7,9 +7,8 @@ export async function getUsers() {
     return users.data;
 }
 
-async function getPosts () {
+export async function getPosts () {
     let posts = await options.get('/posts');
     return posts.data;
 }
 
-export default {getUsers, getPosts}
