@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    NavLink, useParams
+    NavLink
 } from "react-router-dom";
 import Users from "./components/users/Users";
 import Posts from "./components/posts/Posts";
@@ -20,11 +20,11 @@ function App() {
                 </div>
                 <Routes>
                     <Route exact={true} path={'/'} element={<h1><img
-                        src="https://marketer.ua/wp-content/uploads/2017/09/google-ranking-factors.png" alt="'Google"/>
+                        src="https://marketer.ua/wp-content/uploads/2017/09/google-ranking-factors.png" alt="Google"/>
                     </h1>}/>
-                    <Route exact={true} path={'/users'} element={<Users/>}/>
-                    <Route exact={true} path={'/posts'} element={<Posts/>}/>
-                    <Route exact={true} path={'/posts/:id'} element={<PostDetails/>}/>
+                    <Route path={'/users'} element={<Users/>}/>
+                    <Route path={'/posts'} element={<Posts/>}/>
+                    <Route path={'/posts/:id'} element={<PostDetails/>}/>
                 </Routes>
             </div>
         </Router>

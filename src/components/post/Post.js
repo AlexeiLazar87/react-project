@@ -11,7 +11,7 @@ export default function Post ({item}) {
             <h2>
                 {item.id}
                 <div>{item.title}</div>
-                <Link to={'/posts/' + item.id}><button>post {item.id} details</button></Link>
+                <Link to={`/posts/${item.id}`}><button>post {item.id} details</button></Link>
             </h2>
         </div>
     )

@@ -12,3 +12,8 @@ export async function getPosts () {
     return posts.data;
 }
 
+// export async function getPost (id) {
+//     let p = await options.get(`/posts/${id}`);
+//     return p;
+// }
+
