@@ -7,10 +7,13 @@ export default function Users() {
     let [users, setUsers] = useState([]);
     let [singleUser, setSingleUser] = useState(null);
 
-    useEffect(async () => {
+    useEffect( () => {
+        async function fetchData () {
         let users = await getUsers();
         setUsers([...users])
-    });
+        }
+        fetchData();
+    },[]);
 
     const findSingleUser = (id) => {
         let find = users.find(value => value.id === id);

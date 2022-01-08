@@ -19,9 +19,7 @@ function App() {
                     <div><NavLink to={'/posts'}><h3>to posts</h3></NavLink></div>
                 </div>
                 <Routes>
-                    <Route exact={true} path={'/'} element={<h1><img
-                        src="https://marketer.ua/wp-content/uploads/2017/09/google-ranking-factors.png" alt="Google"/>
-                    </h1>}/>
+                    <Route path={'/'} element={<h1>Home</h1>}/>
                     <Route path={'/users'} element={<Users/>}/>
                     <Route path={'/posts'} element={<Posts/>}/>
                     <Route path={'/posts/:id'} element={<PostDetails/>}/>

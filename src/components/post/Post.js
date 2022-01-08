@@ -1,7 +1,4 @@
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 
@@ -12,6 +9,7 @@ export default function Post ({item}) {
                 {item.id}
                 <div>{item.title}</div>
                 <Link to={`/posts/${item.id}`}><button>post {item.id} details</button></Link>
+                <hr/>
             </h2>
         </div>
     )
